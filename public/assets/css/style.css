@@ -1,0 +1,1977 @@
+@font-face {
+	font-family : Inter;
+	font-display : swap;
+	src : url("../fonts/Inter-ExtraBold.woff") format("woff"), url("../fonts/Inter-ExtraBold.woff2") format("woff2");
+	font-weight : 800;
+	font-style : normal;
+}
+
+@font-face {
+	font-family : Inter;
+	font-display : swap;
+	src : url("../fonts/Inter-ExtraLight.woff") format("woff"), url("../fonts/Inter-ExtraLight.woff2") format("woff2");
+	font-weight : 200;
+	font-style : normal;
+}
+
+@font-face {
+	font-family : Inter;
+	font-display : swap;
+	src : url("../fonts/Inter-Light.woff") format("woff"), url("../fonts/Inter-Light.woff2") format("woff2");
+	font-weight : 300;
+	font-style : normal;
+}
+
+@font-face {
+	font-family : Inter;
+	font-display : swap;
+	src : url("../fonts/Inter-Bold.woff") format("woff"), url("../fonts/Inter-Bold.woff2") format("woff2");
+	font-weight : 700;
+	font-style : normal;
+}
+
+@font-face {
+	font-family : Inter;
+	font-display : swap;
+	src : url("../fonts/Inter-Thin.woff") format("woff"), url("../fonts/Inter-Thin.woff2") format("woff2");
+	font-weight : 100;
+	font-style : normal;
+}
+
+@font-face {
+	font-family : Inter;
+	font-display : swap;
+	src : url("../fonts/Inter-Regular.woff") format("woff"), url("../fonts/Inter-Regular.woff2") format("woff2");
+	font-weight : 400;
+	font-style : normal;
+}
+
+@font-face {
+	font-family : Inter;
+	font-display : swap;
+	src : url("../fonts/Inter-SemiBold.woff") format("woff"), url("../fonts/Inter-SemiBold.woff2") format("woff2");
+	font-weight : 600;
+	font-style : normal;
+}
+
+@font-face {
+	font-family : Inter;
+	font-display : swap;
+	src : url("../fonts/Inter-Medium.woff") format("woff"), url("../fonts/Inter-Medium.woff2") format("woff2");
+	font-weight : 500;
+	font-style : normal;
+}
+
+@font-face {
+	font-family : Inter;
+	font-display : swap;
+	src : url("../fonts/Inter-Black.woff") format("woff"), url("../fonts/Inter-Black.woff2") format("woff2");
+	font-weight : 900;
+	font-style : normal;
+}
+
+*
+,
+*::before
+,
+*::after {
+	-webkit-box-sizing : border-box;
+	        box-sizing : border-box;
+	padding : 0;
+	margin : 0;
+	-webkit-user-select : text;
+	   -moz-user-select : text;
+	    -ms-user-select : text;
+	        user-select : text;
+}
+
+body {
+	background-color : #ffffff;
+	font-family : Inter;
+}
+
+a {
+	text-decoration : none;
+}
+
+ul {
+	list-style : none;
+}
+
+input {
+	padding : 0;
+	margin : 0;
+	border : none;
+	outline : none;
+}
+
+button {
+	padding : 0;
+	border : none;
+	cursor : pointer;
+	outline : none;
+}
+
+ol
+,
+ul {
+	padding-left : 0;
+}
+
+dl
+,
+ol
+,
+ul {
+	margin-top : 0;
+	margin-bottom : 0;
+}
+
+p {
+	margin-top : 0;
+	margin-bottom : 0;
+}
+
+.h1
+,
+.h2
+,
+.h3
+,
+.h4
+,
+.h5
+,
+.h6
+,
+h1
+,
+h2
+,
+h3
+,
+h4
+,
+h5
+,
+h6 {
+	margin-top : 0;
+	margin-bottom : 0;
+}
+
+.containers {
+	max-width : 1440px;
+	padding : 0 212px;
+	margin : 0 auto;
+	width : 100%;
+}
+
+.display-n {
+	display : none !important;
+}
+
+opacity-h {
+	opacity : 0 !important;
+}
+
+.footer {
+	width : 100%;
+	display : -webkit-box;
+	display : -ms-flexbox;
+	display : flex;
+	-webkit-box-align : center;
+	-ms-flex-align : center;
+	align-items : center;
+	-webkit-box-pack : center;
+	-ms-flex-pack : center;
+	justify-content : center;
+	padding : 45px 0;
+}
+
+.footer__title {
+	font-family : Inter;
+	font-style : normal;
+	font-weight : 500;
+	font-size : 14px;
+	line-height : 17px;
+	color : #000000;
+}
+
+.header {
+	width : 100%;
+	display : -webkit-box;
+	display : -ms-flexbox;
+	display : flex;
+	-webkit-box-align : center;
+	-ms-flex-align : center;
+	align-items : center;
+	-webkit-box-pack : center;
+	-ms-flex-pack : center;
+	justify-content : center;
+	padding : 30px 75px;
+	background : #ffffff;
+	border : 1px solid #dce1e5;
+}
+
+.header__title {
+	font-family : "Inter";
+	font-style : normal;
+	font-weight : 600;
+	font-size : 32px;
+	line-height : 39px;
+	color : #000000;
+}
+
+main {
+	display : -webkit-box;
+	display : -ms-flexbox;
+	display : flex;
+	-webkit-box-orient : vertical;
+	-webkit-box-direction : normal;
+	-ms-flex-direction : column;
+	    flex-direction : column;
+	-webkit-box-align : center;
+	-ms-flex-align : center;
+	align-items : center;
+	-webkit-box-pack : justify;
+	-ms-flex-pack : justify;
+	justify-content : space-between;
+}
+
+.home {
+	width : 100%;
+	margin : 15px 0 0 0;
+	height : 100%;
+	display : -webkit-box;
+	display : -ms-flexbox;
+	display : flex;
+	-webkit-box-align : start;
+	-ms-flex-align : start;
+	align-items : flex-start;
+	-webkit-box-pack : start;
+	-ms-flex-pack : start;
+	justify-content : flex-start;
+	position : relative;
+	z-index : 2;
+}
+
+.home__wrapper {
+	width : 100%;
+	display : -webkit-box;
+	display : -ms-flexbox;
+	display : flex;
+	-webkit-box-align : start;
+	-ms-flex-align : start;
+	align-items : flex-start;
+	-webkit-box-pack : start;
+	-ms-flex-pack : start;
+	justify-content : flex-start;
+}
+
+.home__blocks {
+	margin : 0 0 0 15px;
+}
+
+.home__welcome {
+	background : #ffffff;
+	-webkit-box-shadow : 0px 0px 4px rgba(0, 0, 0, 0.25);
+	        box-shadow : 0px 0px 4px rgba(0, 0, 0, 0.25);
+	border-radius : 8px;
+	padding : 48px 32px;
+	display : -webkit-box;
+	display : -ms-flexbox;
+	display : flex;
+	-webkit-box-orient : vertical;
+	-webkit-box-direction : normal;
+	-ms-flex-direction : column;
+	    flex-direction : column;
+	-webkit-box-align : center;
+	-ms-flex-align : center;
+	align-items : center;
+	-webkit-box-pack : center;
+	-ms-flex-pack : center;
+	justify-content : center;
+}
+
+.home__welcome-title {
+	font-family : "Inter";
+	font-style : normal;
+	font-weight : 500;
+	font-size : 26px;
+	line-height : 31px;
+	text-align : center;
+	color : #000000;
+}
+
+.home__welcome-text {
+	margin : 8px 0 0 0;
+	font-family : "Inter";
+	font-style : normal;
+	font-weight : 400;
+	font-size : 18px;
+	line-height : 22px;
+	display : -webkit-box;
+	display : -ms-flexbox;
+	display : flex;
+	-webkit-box-align : center;
+	-ms-flex-align : center;
+	align-items : center;
+	text-align : center;
+	color : #818c99;
+}
+
+.home__account {
+	background : #ffffff;
+	border : 1px solid #dce1e6;
+	border-radius : 6px;
+	display : -webkit-box;
+	display : -ms-flexbox;
+	display : flex;
+	-webkit-box-orient : vertical;
+	-webkit-box-direction : normal;
+	-ms-flex-direction : column;
+	    flex-direction : column;
+	-webkit-box-align : center;
+	-ms-flex-align : center;
+	align-items : center;
+	-webkit-box-pack : start;
+	-ms-flex-pack : start;
+	justify-content : flex-start;
+	padding : 12px 24px;
+	width : 550px;
+}
+
+.home__account-title {
+	font-family : "Inter";
+	font-style : normal;
+	font-weight : 400;
+	font-size : 15px;
+	line-height : 20px;
+	color : #222222;
+}
+
+.home__account-line {
+	width : calc(100% + 32px);
+	margin : 14px 0;
+	height : 1px;
+	background : #e7e8ec;
+}
+
+.home__account-blocks {
+	width : 100%;
+	display : -ms-grid;
+	display :     grid;
+	-ms-grid-columns : 1fr;
+	grid-template-columns : 1fr;
+	gap : 20px;
+}
+
+.home__account-btn {
+	font-family : "Inter";
+	font-style : normal;
+	font-weight : 500;
+	font-size : 16px;
+	line-height : 20px;
+	color : #2d81e0;
+	margin : 20px 0 15px 0;
+	cursor : pointer;
+	background : transparent;
+	outline : none;
+	border : none;
+}
+
+.home__reportList {
+	border : 1px solid #dce1e5;
+	border-radius : 6px;
+	background : #ffffff;
+	padding : 14px 16px;
+	display : -webkit-box;
+	display : -ms-flexbox;
+	display : flex;
+	-webkit-box-orient : vertical;
+	-webkit-box-direction : normal;
+	-ms-flex-direction : column;
+	    flex-direction : column;
+	-webkit-box-align : start;
+	-ms-flex-align : start;
+	align-items : flex-start;
+	-webkit-box-pack : start;
+	-ms-flex-pack : start;
+	justify-content : flex-start;
+}
+
+.home__reportList-tabs {
+	display : -webkit-box;
+	display : -ms-flexbox;
+	display : flex;
+	-webkit-box-align : center;
+	-ms-flex-align : center;
+	align-items : center;
+	-webkit-box-pack : start;
+	-ms-flex-pack : start;
+	justify-content : flex-start;
+}
+
+.home__reportList-decor {
+	cursor : pointer;
+}
+
+.home__reportList-tab {
+	display : -webkit-box;
+	display : -ms-flexbox;
+	display : flex;
+	-webkit-box-align : center;
+	-ms-flex-align : center;
+	align-items : center;
+	-webkit-box-pack : center;
+	-ms-flex-pack : center;
+	justify-content : center;
+	margin : 0 32px 0 0;
+	cursor : pointer;
+}
+
+.home__reportList-tab__a h5 {
+	color : #000000 !important;
+}
+
+.home__reportList-tab:last-child {
+	margin : 0 0 0 0;
+}
+
+.home__reportList-tab h5 {
+	font-family : "Inter";
+	font-style : normal;
+	font-weight : 400;
+	font-size : 18px;
+	line-height : 22px;
+	color : gray;
+	-webkit-transition : all 0.5s ease;
+	     -o-transition : all 0.5s ease;
+	        transition : all 0.5s ease;
+	margin : 0 6px 0 0;
+}
+
+.home__reportList-tab span {
+	width : 18px;
+	height : 18px;
+	background : #ff3347;
+	border-radius : 50%;
+	display : -webkit-box;
+	display : -ms-flexbox;
+	display : flex;
+	-webkit-box-align : center;
+	-ms-flex-align : center;
+	align-items : center;
+	-webkit-box-pack : center;
+	-ms-flex-pack : center;
+	justify-content : center;
+	font-family : "Inter";
+	font-style : normal;
+	font-weight : 400;
+	font-size : 12px;
+	line-height : 14px;
+	color : #ffffff;
+}
+
+.home__reportList-line {
+	width : calc(100% + 32px);
+	height : 0.5px;
+	background : #e7e8ec;
+	position : relative;
+	left : -16px;
+	margin : 14px 0 0 0;
+}
+
+.home__reportList-lines {
+	width : calc(100% + 32px);
+	height : 0.5px;
+	background : #e7e8ec;
+	position : relative;
+	left : -16px;
+	margin : 0 0 14px 0;
+}
+
+.home__reportList-search {
+	padding : 14px 0;
+	display : -webkit-box;
+	display : -ms-flexbox;
+	display : flex;
+	-webkit-box-align : center;
+	-ms-flex-align : center;
+	align-items : center;
+	-webkit-box-pack : start;
+	-ms-flex-pack : start;
+	justify-content : flex-start;
+	position : relative;
+	width : 100%;
+}
+
+.home__reportList-label {
+	width : 100%;
+	display : -webkit-box;
+	display : -ms-flexbox;
+	display : flex;
+	-webkit-box-align : center;
+	-ms-flex-align : center;
+	align-items : center;
+	-webkit-box-pack : start;
+	-ms-flex-pack : start;
+	justify-content : flex-start;
+}
+
+.home__reportList-input {
+	width : 100%;
+	padding : 0 20px;
+	font-family : "Inter";
+	font-style : normal;
+	font-weight : 400;
+	font-size : 15px;
+	line-height : 20px;
+	color : #000000;
+}
+
+.home__reportList-input::-webkit-input-placeholder {
+	font-family : "Inter";
+	font-style : normal;
+	font-weight : 400;
+	font-size : 15px;
+	line-height : 20px;
+	color : #818c99;
+}
+
+.home__reportList-input::-moz-placeholder {
+	font-family : "Inter";
+	font-style : normal;
+	font-weight : 400;
+	font-size : 15px;
+	line-height : 20px;
+	color : #818c99;
+}
+
+.home__reportList-input:-ms-input-placeholder {
+	font-family : "Inter";
+	font-style : normal;
+	font-weight : 400;
+	font-size : 15px;
+	line-height : 20px;
+	color : #818c99;
+}
+
+.home__reportList-input::-ms-input-placeholder {
+	font-family : "Inter";
+	font-style : normal;
+	font-weight : 400;
+	font-size : 15px;
+	line-height : 20px;
+	color : #818c99;
+}
+
+.home__reportList-input::placeholder {
+	font-family : "Inter";
+	font-style : normal;
+	font-weight : 400;
+	font-size : 15px;
+	line-height : 20px;
+	color : #818c99;
+}
+
+.home__reportList-list {
+	margin : 10px 0 15px 0;
+	display : -webkit-box;
+	display : -ms-flexbox;
+	display : flex;
+	-webkit-box-orient : vertical;
+	-webkit-box-direction : normal;
+	-ms-flex-direction : column;
+	    flex-direction : column;
+	-webkit-box-align : start;
+	-ms-flex-align : start;
+	align-items : flex-start;
+	-webkit-box-pack : start;
+	-ms-flex-pack : start;
+	justify-content : flex-start;
+}
+
+.home__reportList-item {
+	display : -webkit-box;
+	display : -ms-flexbox;
+	display : flex;
+	cursor : pointer;
+	-webkit-box-orient : vertical;
+	-webkit-box-direction : normal;
+	-ms-flex-direction : column;
+	    flex-direction : column;
+	-webkit-box-align : start;
+	-ms-flex-align : start;
+	align-items : flex-start;
+	-webkit-box-pack : start;
+	-ms-flex-pack : start;
+	justify-content : flex-start;
+	margin : 0 0 40px 0;
+}
+
+.home__reportList-item:last-child {
+	margin : 0 0 0 0;
+}
+
+.home__reportList-nav {
+	display : -ms-grid;
+	display :     grid;
+	-ms-grid-columns : 1fr 1fr 2fr;
+	grid-template-columns : 1fr 1fr 2fr;
+	gap : 18px;
+	width : 100%;
+}
+
+.home__reportList-nav__i {
+	font-family : "Inter";
+	font-style : normal;
+	font-weight : 400;
+	font-size : 14px;
+	line-height : 17px;
+	color : #000000;
+}
+
+.home__reportList-content {
+	margin : 10px 0 0 0;
+	display : -ms-grid;
+	display :     grid;
+	-ms-grid-columns : 1fr 1fr 2fr;
+	grid-template-columns : 1fr 1fr 2fr;
+	gap : 18px;
+	width : 100%;
+}
+
+.home__reportList-content__i {
+	font-family : "Inter";
+	font-style : normal;
+	font-weight : 400;
+	font-size : 18px;
+	line-height : 22px;
+	color : #000000;
+}
+
+.home__reportHistory {
+	border : 1px solid #dce1e5;
+	border-radius : 6px;
+	background : #ffffff;
+	padding : 14px 16px;
+	display : -webkit-box;
+	display : -ms-flexbox;
+	display : flex;
+	-webkit-box-orient : vertical;
+	-webkit-box-direction : normal;
+	-ms-flex-direction : column;
+	    flex-direction : column;
+	-webkit-box-align : start;
+	-ms-flex-align : start;
+	align-items : flex-start;
+	-webkit-box-pack : start;
+	-ms-flex-pack : start;
+	justify-content : flex-start;
+}
+
+.home__reportHistory-tabs {
+	display : -webkit-box;
+	display : -ms-flexbox;
+	display : flex;
+	-webkit-box-align : center;
+	-ms-flex-align : center;
+	align-items : center;
+	-webkit-box-pack : start;
+	-ms-flex-pack : start;
+	justify-content : flex-start;
+}
+
+.home__reportHistory-tab {
+	display : -webkit-box;
+	display : -ms-flexbox;
+	display : flex;
+	-webkit-box-align : center;
+	-ms-flex-align : center;
+	align-items : center;
+	-webkit-box-pack : center;
+	-ms-flex-pack : center;
+	justify-content : center;
+	margin : 0 32px 0 0;
+	cursor : pointer;
+}
+
+.home__reportHistory-tab__a h5 {
+	color : #000000 !important;
+}
+
+.home__reportHistory-tab:last-child {
+	margin : 0 0 0 0;
+}
+
+.home__reportHistory-tab h5 {
+	font-family : "Inter";
+	font-style : normal;
+	font-weight : 400;
+	font-size : 18px;
+	line-height : 22px;
+	color : gray;
+	-webkit-transition : all 0.5s ease;
+	     -o-transition : all 0.5s ease;
+	        transition : all 0.5s ease;
+	margin : 0 6px 0 0;
+}
+
+.home__reportHistory-tab span {
+	width : 18px;
+	height : 18px;
+	background : #ff3347;
+	border-radius : 50%;
+	display : -webkit-box;
+	display : -ms-flexbox;
+	display : flex;
+	-webkit-box-align : center;
+	-ms-flex-align : center;
+	align-items : center;
+	-webkit-box-pack : center;
+	-ms-flex-pack : center;
+	justify-content : center;
+	font-family : "Inter";
+	font-style : normal;
+	font-weight : 400;
+	font-size : 12px;
+	line-height : 14px;
+	color : #ffffff;
+}
+
+.home__reportHistory-line {
+	width : calc(100% + 32px);
+	height : 0.5px;
+	background : #e7e8ec;
+	position : relative;
+	left : -16px;
+	margin : 14px 0 0 0;
+}
+
+.home__reportHistory-lines {
+	width : calc(100% + 32px);
+	height : 0.5px;
+	background : #e7e8ec;
+	position : relative;
+	left : -16px;
+	margin : 0 0 14px 0;
+}
+
+.home__reportHistory-search {
+	padding : 14px 0;
+	display : -webkit-box;
+	display : -ms-flexbox;
+	display : flex;
+	-webkit-box-align : center;
+	-ms-flex-align : center;
+	align-items : center;
+	-webkit-box-pack : start;
+	-ms-flex-pack : start;
+	justify-content : flex-start;
+	position : relative;
+	width : 100%;
+}
+
+.home__reportHistory-decor {
+	cursor : pointer;
+}
+
+.home__reportHistory-label {
+	width : 100%;
+	display : -webkit-box;
+	display : -ms-flexbox;
+	display : flex;
+	-webkit-box-align : center;
+	-ms-flex-align : center;
+	align-items : center;
+	-webkit-box-pack : start;
+	-ms-flex-pack : start;
+	justify-content : flex-start;
+}
+
+.home__reportHistory-input {
+	width : 100%;
+	padding : 0 20px;
+	font-family : "Inter";
+	font-style : normal;
+	font-weight : 400;
+	font-size : 15px;
+	line-height : 20px;
+	color : #000000;
+}
+
+.home__reportHistory-input::-webkit-input-placeholder {
+	font-family : "Inter";
+	font-style : normal;
+	font-weight : 400;
+	font-size : 15px;
+	line-height : 20px;
+	color : #818c99;
+}
+
+.home__reportHistory-input::-moz-placeholder {
+	font-family : "Inter";
+	font-style : normal;
+	font-weight : 400;
+	font-size : 15px;
+	line-height : 20px;
+	color : #818c99;
+}
+
+.home__reportHistory-input:-ms-input-placeholder {
+	font-family : "Inter";
+	font-style : normal;
+	font-weight : 400;
+	font-size : 15px;
+	line-height : 20px;
+	color : #818c99;
+}
+
+.home__reportHistory-input::-ms-input-placeholder {
+	font-family : "Inter";
+	font-style : normal;
+	font-weight : 400;
+	font-size : 15px;
+	line-height : 20px;
+	color : #818c99;
+}
+
+.home__reportHistory-input::placeholder {
+	font-family : "Inter";
+	font-style : normal;
+	font-weight : 400;
+	font-size : 15px;
+	line-height : 20px;
+	color : #818c99;
+}
+
+.home__reportHistory-list {
+	margin : 10px 0 15px 0;
+	display : -webkit-box;
+	display : -ms-flexbox;
+	display : flex;
+	-webkit-box-orient : vertical;
+	-webkit-box-direction : normal;
+	-ms-flex-direction : column;
+	    flex-direction : column;
+	-webkit-box-align : start;
+	-ms-flex-align : start;
+	align-items : flex-start;
+	-webkit-box-pack : start;
+	-ms-flex-pack : start;
+	justify-content : flex-start;
+}
+
+.home__reportHistory-item {
+	display : -webkit-box;
+	display : -ms-flexbox;
+	display : flex;
+	cursor : pointer;
+	-webkit-box-orient : vertical;
+	-webkit-box-direction : normal;
+	-ms-flex-direction : column;
+	    flex-direction : column;
+	-webkit-box-align : start;
+	-ms-flex-align : start;
+	align-items : flex-start;
+	-webkit-box-pack : start;
+	-ms-flex-pack : start;
+	justify-content : flex-start;
+	margin : 0 0 40px 0;
+}
+
+.home__reportHistory-item:last-child {
+	margin : 0 0 0 0;
+}
+
+.home__reportHistory-nav {
+	display : -ms-grid;
+	display :     grid;
+	-ms-grid-columns : 1fr 1fr 2fr;
+	grid-template-columns : 1fr 1fr 2fr;
+	gap : 18px;
+	width : 100%;
+}
+
+.home__reportHistory-nav__i {
+	font-family : "Inter";
+	font-style : normal;
+	font-weight : 400;
+	font-size : 14px;
+	line-height : 17px;
+	color : #000000;
+}
+
+.home__reportHistory-content {
+	margin : 10px 0 0 0;
+	display : -ms-grid;
+	display :     grid;
+	-ms-grid-columns : 1fr 1fr 2fr;
+	grid-template-columns : 1fr 1fr 2fr;
+	gap : 18px;
+	width : 100%;
+}
+
+.home__reportHistory-content__i {
+	font-family : "Inter";
+	font-style : normal;
+	font-weight : 400;
+	font-size : 18px;
+	line-height : 22px;
+	color : #000000;
+}
+
+.home__reportDetail {
+	width : 550px;
+	background : #ffffff;
+	border : 1px solid #dce1e6;
+	border-radius : 6px;
+	display : -webkit-box;
+	display : -ms-flexbox;
+	display : flex;
+	-webkit-box-orient : vertical;
+	-webkit-box-direction : normal;
+	-ms-flex-direction : column;
+	    flex-direction : column;
+	-webkit-box-align : center;
+	-ms-flex-align : center;
+	align-items : center;
+	-webkit-box-pack : start;
+	-ms-flex-pack : start;
+	justify-content : flex-start;
+	padding : 12px 24px;
+}
+
+.home__reportDetail-header {
+	position : relative;
+	display : -webkit-box;
+	display : -ms-flexbox;
+	display : flex;
+	-webkit-box-align : center;
+	-ms-flex-align : center;
+	align-items : center;
+	-webkit-box-pack : center;
+	-ms-flex-pack : center;
+	justify-content : center;
+	padding : 14px 0;
+	width : 100%;
+}
+
+.home__reportDetail-back {
+	position : absolute;
+	top : 50%;
+	left : 0;
+	-webkit-transform : translate(0, -50%);
+	    -ms-transform : translate(0, -50%);
+	        transform : translate(0, -50%);
+	display : -webkit-box;
+	display : -ms-flexbox;
+	display : flex;
+	-webkit-box-align : center;
+	-ms-flex-align : center;
+	align-items : center;
+	-webkit-box-pack : center;
+	-ms-flex-pack : center;
+	justify-content : center;
+	cursor : pointer;
+}
+
+.home__reportDetail-back p {
+	margin : 0 0 0 10px;
+	font-family : "Inter";
+	font-style : normal;
+	font-weight : 400;
+	font-size : 15px;
+	line-height : 20px;
+	color : #818c99;
+}
+
+.home__reportDetail-line {
+	background : #e7e8ec;
+	width : calc(100% + 32px);
+	height : 1px;
+}
+
+.home__reportDetail-blocks {
+	width : 100%;
+	margin : 15px 0 0 0;
+	display : -ms-grid;
+	display :     grid;
+	-ms-grid-columns : 1fr;
+	grid-template-columns : 1fr;
+	gap : 15px;
+}
+
+.home__reportDetail-btn {
+	margin : 20px 0 10px 0;
+	font-family : "Inter";
+	font-style : normal;
+	font-weight : 500;
+	font-size : 16px;
+	line-height : 20px;
+	background : transparent;
+	cursor : pointer;
+	color : #2d81e0;
+}
+
+.home__appliList {
+	border : 1px solid #dce1e5;
+	border-radius : 6px;
+	background : #ffffff;
+	padding : 14px 16px;
+	display : -webkit-box;
+	display : -ms-flexbox;
+	display : flex;
+	-webkit-box-orient : vertical;
+	-webkit-box-direction : normal;
+	-ms-flex-direction : column;
+	    flex-direction : column;
+	-webkit-box-align : start;
+	-ms-flex-align : start;
+	align-items : flex-start;
+	-webkit-box-pack : start;
+	-ms-flex-pack : start;
+	justify-content : flex-start;
+}
+
+.home__appliList-tabs {
+	display : -webkit-box;
+	display : -ms-flexbox;
+	display : flex;
+	-webkit-box-align : center;
+	-ms-flex-align : center;
+	align-items : center;
+	-webkit-box-pack : start;
+	-ms-flex-pack : start;
+	justify-content : flex-start;
+}
+
+.home__appliList-decor {
+	cursor : pointer;
+}
+
+.home__appliList-tab {
+	display : -webkit-box;
+	display : -ms-flexbox;
+	display : flex;
+	-webkit-box-align : center;
+	-ms-flex-align : center;
+	align-items : center;
+	-webkit-box-pack : center;
+	-ms-flex-pack : center;
+	justify-content : center;
+	margin : 0 32px 0 0;
+	cursor : pointer;
+}
+
+.home__appliList-tab__a h5 {
+	color : #000000 !important;
+}
+
+.home__appliList-tab:last-child {
+	margin : 0 0 0 0;
+}
+
+.home__appliList-tab h5 {
+	font-family : "Inter";
+	font-style : normal;
+	font-weight : 400;
+	font-size : 18px;
+	line-height : 22px;
+	color : gray;
+	-webkit-transition : all 0.5s ease;
+	     -o-transition : all 0.5s ease;
+	        transition : all 0.5s ease;
+	margin : 0 6px 0 0;
+}
+
+.home__appliList-tab span {
+	width : 18px;
+	height : 18px;
+	background : #ff3347;
+	border-radius : 50%;
+	display : -webkit-box;
+	display : -ms-flexbox;
+	display : flex;
+	-webkit-box-align : center;
+	-ms-flex-align : center;
+	align-items : center;
+	-webkit-box-pack : center;
+	-ms-flex-pack : center;
+	justify-content : center;
+	font-family : "Inter";
+	font-style : normal;
+	font-weight : 400;
+	font-size : 12px;
+	line-height : 14px;
+	color : #ffffff;
+}
+
+.home__appliList-line {
+	width : calc(100% + 32px);
+	height : 0.5px;
+	background : #e7e8ec;
+	position : relative;
+	left : -16px;
+	margin : 14px 0 0 0;
+}
+
+.home__appliList-lines {
+	width : calc(100% + 32px);
+	height : 0.5px;
+	background : #e7e8ec;
+	position : relative;
+	left : -16px;
+	margin : 0 0 14px 0;
+}
+
+.home__appliList-search {
+	padding : 14px 0;
+	display : -webkit-box;
+	display : -ms-flexbox;
+	display : flex;
+	-webkit-box-align : center;
+	-ms-flex-align : center;
+	align-items : center;
+	-webkit-box-pack : start;
+	-ms-flex-pack : start;
+	justify-content : flex-start;
+	position : relative;
+	width : 100%;
+}
+
+.home__appliList-label {
+	width : 100%;
+	display : -webkit-box;
+	display : -ms-flexbox;
+	display : flex;
+	-webkit-box-align : center;
+	-ms-flex-align : center;
+	align-items : center;
+	-webkit-box-pack : start;
+	-ms-flex-pack : start;
+	justify-content : flex-start;
+}
+
+.home__appliList-input {
+	width : 100%;
+	padding : 0 20px;
+	font-family : "Inter";
+	font-style : normal;
+	font-weight : 400;
+	font-size : 15px;
+	line-height : 20px;
+	color : #000000;
+}
+
+.home__appliList-input::-webkit-input-placeholder {
+	font-family : "Inter";
+	font-style : normal;
+	font-weight : 400;
+	font-size : 15px;
+	line-height : 20px;
+	color : #818c99;
+}
+
+.home__appliList-input::-moz-placeholder {
+	font-family : "Inter";
+	font-style : normal;
+	font-weight : 400;
+	font-size : 15px;
+	line-height : 20px;
+	color : #818c99;
+}
+
+.home__appliList-input:-ms-input-placeholder {
+	font-family : "Inter";
+	font-style : normal;
+	font-weight : 400;
+	font-size : 15px;
+	line-height : 20px;
+	color : #818c99;
+}
+
+.home__appliList-input::-ms-input-placeholder {
+	font-family : "Inter";
+	font-style : normal;
+	font-weight : 400;
+	font-size : 15px;
+	line-height : 20px;
+	color : #818c99;
+}
+
+.home__appliList-input::placeholder {
+	font-family : "Inter";
+	font-style : normal;
+	font-weight : 400;
+	font-size : 15px;
+	line-height : 20px;
+	color : #818c99;
+}
+
+.home__appliList-list {
+	margin : 10px 0 15px 0;
+	display : -webkit-box;
+	display : -ms-flexbox;
+	display : flex;
+	-webkit-box-orient : vertical;
+	-webkit-box-direction : normal;
+	-ms-flex-direction : column;
+	    flex-direction : column;
+	-webkit-box-align : start;
+	-ms-flex-align : start;
+	align-items : flex-start;
+	-webkit-box-pack : start;
+	-ms-flex-pack : start;
+	justify-content : flex-start;
+}
+
+.home__appliList-item {
+	display : -webkit-box;
+	display : -ms-flexbox;
+	display : flex;
+	cursor : pointer;
+	-webkit-box-orient : vertical;
+	-webkit-box-direction : normal;
+	-ms-flex-direction : column;
+	    flex-direction : column;
+	-webkit-box-align : start;
+	-ms-flex-align : start;
+	align-items : flex-start;
+	-webkit-box-pack : start;
+	-ms-flex-pack : start;
+	justify-content : flex-start;
+	margin : 0 0 40px 0;
+}
+
+.home__appliList-item:last-child {
+	margin : 0 0 0 0;
+}
+
+.home__appliList-nav {
+	display : -ms-grid;
+	display :     grid;
+	-ms-grid-columns : 1fr 1fr 2fr;
+	grid-template-columns : 1fr 1fr 2fr;
+	gap : 18px;
+	width : 100%;
+}
+
+.home__appliList-nav__i {
+	font-family : "Inter";
+	font-style : normal;
+	font-weight : 400;
+	font-size : 14px;
+	line-height : 17px;
+	color : #000000;
+}
+
+.home__appliList-content {
+	margin : 10px 0 0 0;
+	display : -ms-grid;
+	display :     grid;
+	-ms-grid-columns : 1fr 1fr 2fr;
+	grid-template-columns : 1fr 1fr 2fr;
+	gap : 18px;
+	width : 100%;
+}
+
+.home__appliList-content__i {
+	font-family : "Inter";
+	font-style : normal;
+	font-weight : 400;
+	font-size : 18px;
+	line-height : 22px;
+	color : #000000;
+}
+
+.home__appliHistory {
+	border : 1px solid #dce1e5;
+	border-radius : 6px;
+	background : #ffffff;
+	padding : 14px 16px;
+	display : -webkit-box;
+	display : -ms-flexbox;
+	display : flex;
+	-webkit-box-orient : vertical;
+	-webkit-box-direction : normal;
+	-ms-flex-direction : column;
+	    flex-direction : column;
+	-webkit-box-align : start;
+	-ms-flex-align : start;
+	align-items : flex-start;
+	-webkit-box-pack : start;
+	-ms-flex-pack : start;
+	justify-content : flex-start;
+}
+
+.home__appliHistory-tabs {
+	display : -webkit-box;
+	display : -ms-flexbox;
+	display : flex;
+	-webkit-box-align : center;
+	-ms-flex-align : center;
+	align-items : center;
+	-webkit-box-pack : start;
+	-ms-flex-pack : start;
+	justify-content : flex-start;
+}
+
+.home__appliHistory-tab {
+	display : -webkit-box;
+	display : -ms-flexbox;
+	display : flex;
+	-webkit-box-align : center;
+	-ms-flex-align : center;
+	align-items : center;
+	-webkit-box-pack : center;
+	-ms-flex-pack : center;
+	justify-content : center;
+	margin : 0 32px 0 0;
+	cursor : pointer;
+}
+
+.home__appliHistory-tab__a h5 {
+	color : #000000 !important;
+}
+
+.home__appliHistory-tab:last-child {
+	margin : 0 0 0 0;
+}
+
+.home__appliHistory-tab h5 {
+	font-family : "Inter";
+	font-style : normal;
+	font-weight : 400;
+	font-size : 18px;
+	line-height : 22px;
+	color : gray;
+	-webkit-transition : all 0.5s ease;
+	     -o-transition : all 0.5s ease;
+	        transition : all 0.5s ease;
+	margin : 0 6px 0 0;
+}
+
+.home__appliHistory-tab span {
+	width : 18px;
+	height : 18px;
+	background : #ff3347;
+	border-radius : 50%;
+	display : -webkit-box;
+	display : -ms-flexbox;
+	display : flex;
+	-webkit-box-align : center;
+	-ms-flex-align : center;
+	align-items : center;
+	-webkit-box-pack : center;
+	-ms-flex-pack : center;
+	justify-content : center;
+	font-family : "Inter";
+	font-style : normal;
+	font-weight : 400;
+	font-size : 12px;
+	line-height : 14px;
+	color : #ffffff;
+}
+
+.home__appliHistory-line {
+	width : calc(100% + 32px);
+	height : 0.5px;
+	background : #e7e8ec;
+	position : relative;
+	left : -16px;
+	margin : 14px 0 0 0;
+}
+
+.home__appliHistory-lines {
+	width : calc(100% + 32px);
+	height : 0.5px;
+	background : #e7e8ec;
+	position : relative;
+	left : -16px;
+	margin : 0 0 14px 0;
+}
+
+.home__appliHistory-search {
+	padding : 14px 0;
+	display : -webkit-box;
+	display : -ms-flexbox;
+	display : flex;
+	-webkit-box-align : center;
+	-ms-flex-align : center;
+	align-items : center;
+	-webkit-box-pack : start;
+	-ms-flex-pack : start;
+	justify-content : flex-start;
+	position : relative;
+	width : 100%;
+}
+
+.home__appliHistory-decor {
+	cursor : pointer;
+}
+
+.home__appliHistory-label {
+	width : 100%;
+	display : -webkit-box;
+	display : -ms-flexbox;
+	display : flex;
+	-webkit-box-align : center;
+	-ms-flex-align : center;
+	align-items : center;
+	-webkit-box-pack : start;
+	-ms-flex-pack : start;
+	justify-content : flex-start;
+}
+
+.home__appliHistory-input {
+	width : 100%;
+	padding : 0 20px;
+	font-family : "Inter";
+	font-style : normal;
+	font-weight : 400;
+	font-size : 15px;
+	line-height : 20px;
+	color : #000000;
+}
+
+.home__appliHistory-input::-webkit-input-placeholder {
+	font-family : "Inter";
+	font-style : normal;
+	font-weight : 400;
+	font-size : 15px;
+	line-height : 20px;
+	color : #818c99;
+}
+
+.home__appliHistory-input::-moz-placeholder {
+	font-family : "Inter";
+	font-style : normal;
+	font-weight : 400;
+	font-size : 15px;
+	line-height : 20px;
+	color : #818c99;
+}
+
+.home__appliHistory-input:-ms-input-placeholder {
+	font-family : "Inter";
+	font-style : normal;
+	font-weight : 400;
+	font-size : 15px;
+	line-height : 20px;
+	color : #818c99;
+}
+
+.home__appliHistory-input::-ms-input-placeholder {
+	font-family : "Inter";
+	font-style : normal;
+	font-weight : 400;
+	font-size : 15px;
+	line-height : 20px;
+	color : #818c99;
+}
+
+.home__appliHistory-input::placeholder {
+	font-family : "Inter";
+	font-style : normal;
+	font-weight : 400;
+	font-size : 15px;
+	line-height : 20px;
+	color : #818c99;
+}
+
+.home__appliHistory-list {
+	margin : 10px 0 15px 0;
+	display : -webkit-box;
+	display : -ms-flexbox;
+	display : flex;
+	-webkit-box-orient : vertical;
+	-webkit-box-direction : normal;
+	-ms-flex-direction : column;
+	    flex-direction : column;
+	-webkit-box-align : start;
+	-ms-flex-align : start;
+	align-items : flex-start;
+	-webkit-box-pack : start;
+	-ms-flex-pack : start;
+	justify-content : flex-start;
+}
+
+.home__appliHistory-item {
+	display : -webkit-box;
+	display : -ms-flexbox;
+	display : flex;
+	cursor : pointer;
+	-webkit-box-orient : vertical;
+	-webkit-box-direction : normal;
+	-ms-flex-direction : column;
+	    flex-direction : column;
+	-webkit-box-align : start;
+	-ms-flex-align : start;
+	align-items : flex-start;
+	-webkit-box-pack : start;
+	-ms-flex-pack : start;
+	justify-content : flex-start;
+	margin : 0 0 40px 0;
+}
+
+.home__appliHistory-item:last-child {
+	margin : 0 0 0 0;
+}
+
+.home__appliHistory-nav {
+	display : -ms-grid;
+	display :     grid;
+	-ms-grid-columns : 1fr 1fr 2fr;
+	grid-template-columns : 1fr 1fr 2fr;
+	gap : 18px;
+	width : 100%;
+}
+
+.home__appliHistory-nav__i {
+	font-family : "Inter";
+	font-style : normal;
+	font-weight : 400;
+	font-size : 14px;
+	line-height : 17px;
+	color : #000000;
+}
+
+.home__appliHistory-content {
+	margin : 10px 0 0 0;
+	display : -ms-grid;
+	display :     grid;
+	-ms-grid-columns : 1fr 1fr 2fr;
+	grid-template-columns : 1fr 1fr 2fr;
+	gap : 18px;
+	width : 100%;
+}
+
+.home__appliHistory-content__i {
+	font-family : "Inter";
+	font-style : normal;
+	font-weight : 400;
+	font-size : 18px;
+	line-height : 22px;
+	color : #000000;
+}
+
+.home__appliDetail {
+	width : 550px;
+	background : #ffffff;
+	border : 1px solid #dce1e6;
+	border-radius : 6px;
+	display : -webkit-box;
+	display : -ms-flexbox;
+	display : flex;
+	-webkit-box-orient : vertical;
+	-webkit-box-direction : normal;
+	-ms-flex-direction : column;
+	    flex-direction : column;
+	-webkit-box-align : center;
+	-ms-flex-align : center;
+	align-items : center;
+	-webkit-box-pack : start;
+	-ms-flex-pack : start;
+	justify-content : flex-start;
+	padding : 12px 24px;
+}
+
+.home__appliDetail-header {
+	position : relative;
+	display : -webkit-box;
+	display : -ms-flexbox;
+	display : flex;
+	-webkit-box-align : center;
+	-ms-flex-align : center;
+	align-items : center;
+	-webkit-box-pack : center;
+	-ms-flex-pack : center;
+	justify-content : center;
+	padding : 14px 0;
+	width : 100%;
+}
+
+.home__appliDetail-back {
+	position : absolute;
+	top : 50%;
+	left : 0;
+	-webkit-transform : translate(0, -50%);
+	    -ms-transform : translate(0, -50%);
+	        transform : translate(0, -50%);
+	display : -webkit-box;
+	display : -ms-flexbox;
+	display : flex;
+	-webkit-box-align : center;
+	-ms-flex-align : center;
+	align-items : center;
+	-webkit-box-pack : center;
+	-ms-flex-pack : center;
+	justify-content : center;
+	cursor : pointer;
+}
+
+.home__appliDetail-back p {
+	margin : 0 0 0 10px;
+	font-family : "Inter";
+	font-style : normal;
+	font-weight : 400;
+	font-size : 15px;
+	line-height : 20px;
+	color : #818c99;
+}
+
+.home__appliDetail-line {
+	background : #e7e8ec;
+	width : calc(100% + 32px);
+	height : 1px;
+}
+
+.home__appliDetail-blocks {
+	width : 100%;
+	margin : 15px 0 0 0;
+	display : -ms-grid;
+	display :     grid;
+	-ms-grid-columns : 1fr;
+	grid-template-columns : 1fr;
+	gap : 15px;
+}
+
+.home__appliDetail-btn {
+	margin : 20px 0 10px 0;
+	font-family : "Inter";
+	font-style : normal;
+	font-weight : 500;
+	font-size : 16px;
+	line-height : 20px;
+	background : transparent;
+	cursor : pointer;
+	color : #2d81e0;
+}
+
+.menu {
+	border : 1px solid #dce1e5;
+	border-radius : 6px;
+	padding : 10px;
+	width : 245px;
+}
+
+.menu__list {
+	display : -ms-grid;
+	display :     grid;
+	-ms-grid-columns : 1fr;
+	grid-template-columns : 1fr;
+	gap : 20px;
+	width : 100%;
+}
+
+.menu__item {
+	cursor : pointer;
+	font-family : "Inter";
+	font-style : normal;
+	font-weight : 400;
+	font-size : 18px;
+	line-height : 22px;
+	color : #0e1017;
+}
+
+.menu__item a {
+	font-family : "Inter";
+	font-style : normal;
+	font-weight : 400;
+	font-size : 18px;
+	line-height : 22px;
+	color : #0e1017;
+}
+
+.menu__item-a a {
+	font-weight : 600;
+}
+
+.customInput {
+	background : #f7f8fa;
+	position : relative;
+	border : 1px solid #d3d9de;
+	border-radius : 6px;
+	width : 100%;
+	padding : 10px 12px;
+	margin : 26px 0 0 0;
+}
+
+.customInput__title {
+	position : absolute;
+	left : 0;
+	top : -25px;
+	font-family : "Inter";
+	font-style : normal;
+	font-weight : 400;
+	font-size : 14px;
+	line-height : 18px;
+	color : #6f7985;
+}
+
+.customInput input {
+	width : 100%;
+	background : transparent;
+	font-family : "Inter";
+	font-style : normal;
+	font-weight : 400;
+	font-size : 15px;
+	line-height : 20px;
+	color : #000000;
+}
+
+.customInput input::-webkit-input-placeholder {
+	font-family : "Inter";
+	font-style : normal;
+	font-weight : 400;
+	font-size : 15px;
+	line-height : 20px;
+	color : gray;
+}
+
+.customInput input::-moz-placeholder {
+	font-family : "Inter";
+	font-style : normal;
+	font-weight : 400;
+	font-size : 15px;
+	line-height : 20px;
+	color : gray;
+}
+
+.customInput input:-ms-input-placeholder {
+	font-family : "Inter";
+	font-style : normal;
+	font-weight : 400;
+	font-size : 15px;
+	line-height : 20px;
+	color : gray;
+}
+
+.customInput input::-ms-input-placeholder {
+	font-family : "Inter";
+	font-style : normal;
+	font-weight : 400;
+	font-size : 15px;
+	line-height : 20px;
+	color : gray;
+}
+
+.customInput input::placeholder {
+	font-family : "Inter";
+	font-style : normal;
+	font-weight : 400;
+	font-size : 15px;
+	line-height : 20px;
+	color : gray;
+}
+
+.customTextarea {
+	background : #f7f8fa;
+	position : relative;
+	border : 1px solid #d3d9de;
+	border-radius : 6px;
+	width : 100%;
+	padding : 10px 12px;
+	margin : 26px 0 0 0;
+}
+
+.customTextarea__title {
+	position : absolute;
+	left : 0;
+	top : -25px;
+	font-family : "Inter";
+	font-style : normal;
+	font-weight : 400;
+	font-size : 14px;
+	line-height : 18px;
+	color : #6f7985;
+}
+
+.customTextarea textarea {
+	width : 100%;
+	height : 40px;
+	background : transparent;
+	font-family : "Inter";
+	font-style : normal;
+	font-weight : 400;
+	font-size : 15px;
+	line-height : 20px;
+	color : #000000;
+	resize : none;
+	border : none;
+	outline : none;
+}
+
+.customTextarea textarea::-webkit-input-placeholder {
+	font-family : "Inter";
+	font-style : normal;
+	font-weight : 400;
+	font-size : 15px;
+	line-height : 20px;
+	color : gray;
+}
+
+.customTextarea textarea::-moz-placeholder {
+	font-family : "Inter";
+	font-style : normal;
+	font-weight : 400;
+	font-size : 15px;
+	line-height : 20px;
+	color : gray;
+}
+
+.customTextarea textarea:-ms-input-placeholder {
+	font-family : "Inter";
+	font-style : normal;
+	font-weight : 400;
+	font-size : 15px;
+	line-height : 20px;
+	color : gray;
+}
+
+.customTextarea textarea::-ms-input-placeholder {
+	font-family : "Inter";
+	font-style : normal;
+	font-weight : 400;
+	font-size : 15px;
+	line-height : 20px;
+	color : gray;
+}
+
+.customTextarea textarea::placeholder {
+	font-family : "Inter";
+	font-style : normal;
+	font-weight : 400;
+	font-size : 15px;
+	line-height : 20px;
+	color : gray;
+}
+
+.signIn {
+	height : calc(100vh - 107px);
+	width : 100%;
+}
+
+.signIn__wrapper {
+	width : 100%;
+	height : 100%;
+	display : -webkit-box;
+	display : -ms-flexbox;
+	display : flex;
+	-webkit-box-align : center;
+	-ms-flex-align : center;
+	align-items : center;
+	-webkit-box-pack : center;
+	-ms-flex-pack : center;
+	justify-content : center;
+}
+
+.signIn__block {
+	width : 448px;
+	border : 1px solid #dce1e5;
+	border-radius : 6px;
+	background : #ffffff;
+	padding : 24px;
+}
+
+.signIn__title {
+	font-family : "Inter";
+	font-style : normal;
+	font-weight : 700;
+	font-size : 38px;
+	line-height : 46px;
+	color : #000000;
+}
+
+.signIn__add {
+	margin : 0 0 18px 0;
+	font-family : "Inter";
+	font-style : normal;
+	font-weight : 500;
+	font-size : 26px;
+	line-height : 31px;
+	color : #000000;
+}
+
+.signIn__btn {
+	margin : 14px 0 0 0;
+	background : #0e1017;
+	border-radius : 8px;
+	padding : 11px 22px;
+	font-family : "Inter";
+	font-style : normal;
+	font-weight : 500;
+	font-size : 18px;
+	line-height : 22px;
+	color : #ffffff;
+	cursor : pointer;
+	width : 100%;
+}
+
+.signInInput {
+	position : relative;
+	background : #dfe2e5;
+	border : 0.5px solid #9199a7;
+	border-radius : 8px;
+	width : 100%;
+	padding : 14px 12px;
+	margin : 8px 0 0 0;
+}
+
+.signInInput input {
+	width : 100%;
+	background : transparent;
+	font-family : "Inter";
+	font-style : normal;
+	font-weight : 400;
+	font-size : 15px;
+	line-height : 20px;
+	color : #000000;
+}
+
+.signInInput input::-webkit-input-placeholder {
+	font-family : "Inter";
+	font-style : normal;
+	font-weight : 400;
+	font-size : 15px;
+	line-height : 20px;
+	color : gray;
+}
+
+.signInInput input::-moz-placeholder {
+	font-family : "Inter";
+	font-style : normal;
+	font-weight : 400;
+	font-size : 15px;
+	line-height : 20px;
+	color : gray;
+}
+
+.signInInput input:-ms-input-placeholder {
+	font-family : "Inter";
+	font-style : normal;
+	font-weight : 400;
+	font-size : 15px;
+	line-height : 20px;
+	color : gray;
+}
+
+.signInInput input::-ms-input-placeholder {
+	font-family : "Inter";
+	font-style : normal;
+	font-weight : 400;
+	font-size : 15px;
+	line-height : 20px;
+	color : gray;
+}
+
+.signInInput input::placeholder {
+	font-family : "Inter";
+	font-style : normal;
+	font-weight : 400;
+	font-size : 15px;
+	line-height : 20px;
+	color : gray;
+}
