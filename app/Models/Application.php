@@ -8,4 +8,26 @@ use Illuminate\Database\Eloquent\Model;
 class Application extends Model
 {
     use HasFactory;
+    protected $fillable = [
+        'type',
+        'currency',
+        'genus',
+        'comp',
+        'date',
+        'country_sender',
+        'station_sender',
+        'country_receiver',
+        'station_receiver',
+        'sender',
+        'receiver',
+        'code_cargo',
+        'weight',
+        'terms',
+        'qty',
+        'payer',
+        'notes',
+        'loading',
+        'cost_in_kzt',
+        'period'
+    ];
 }
