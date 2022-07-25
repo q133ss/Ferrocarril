@@ -21,6 +21,7 @@ return new class extends Migration
             $table->string('message1')->nullable();
             $table->text('message2')->nullable();
             $table->foreignId('user_id')->constrained();
+            $table->boolean('is_new')->default(1);
             $table->timestamps();
         });
     }

@@ -30,6 +30,11 @@ Route::middleware('auth')->group(function(){
     Route::get('/applications/history', [App\Http\Controllers\ApplicationController::class , 'history'])->name('applications.history');
 
     Route::get('/complaints', [App\Http\Controllers\ComplaintsController::class , 'index'])->name('complaints.index');
+    Route::get('/complaint/{id}', [App\Http\Controllers\ComplaintsController::class , 'detail'])->name('complaints.detail');
+    Route::post('/hide-comp/{id}', [App\Http\Controllers\ComplaintsController::class, 'hide'])->name('complaints.hide');
+    Route::get('/complaints/history', [App\Http\Controllers\ComplaintsController::class , 'history'])->name('complaints.history');
+    Route::post('/complaints/search', [App\Http\Controllers\ComplaintsController::class , 'search'])->name('complaints.search');
+
 });
 
 Auth::routes();

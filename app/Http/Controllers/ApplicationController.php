@@ -30,14 +30,13 @@ class ApplicationController extends Controller
     }
 
     public function indexSearch(Request $request){
-        $applications = Application::where('is_new',1)
-            ->where('country_sender', 'LIKE', '%'.$request->search.'%')
+        $applications = Application::where('country_sender', 'LIKE', '%'.$request->search.'%')
             ->orWhere('station_sender', 'LIKE', '%'.$request->search.'%')
             ->orWhere('country_receiver', 'LIKE', '%'.$request->search.'%')
             ->orWhere('station_receiver', 'LIKE', '%'.$request->search.'%')
             ->orWhere('sender', 'LIKE', '%'.$request->search.'%')
             ->orWhere('receiver', 'LIKE', '%'.$request->search.'%')
-            ->get(); //orWhere и остальные поля
+            ->get();
         return view('ajax.applications.index', compact('applications'))->render();
     }
 }
