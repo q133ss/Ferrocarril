@@ -35,6 +35,12 @@ Route::middleware('auth')->group(function(){
     Route::get('/complaints/history', [App\Http\Controllers\ComplaintsController::class , 'history'])->name('complaints.history');
     Route::post('/complaints/search', [App\Http\Controllers\ComplaintsController::class , 'search'])->name('complaints.search');
 
+    Route::get('/logout', function (){
+        Session::flush();
+        Auth::logout();
+        return redirect('login');
+    })->name('logout');
+
 });
 
 Auth::routes();

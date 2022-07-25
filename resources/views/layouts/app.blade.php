@@ -29,7 +29,7 @@
                         <li class="menu__item @if(Route::currentRouteName() == 'account') menu__item-a @endif" id="account"> <a href="/">Аккаунт </a></li>
                         <li class="menu__item" id="report"> <a href="{{route('complaints.index')}}">Жалобы </a></li>
                         <li class="menu__item" id="appli"> <a href="{{route('applications.index')}}">Заявки </a></li>
-                        <li class="menu__item" id="exit"> <a href="/">Выйти из аккаунта </a></li>
+                        <li class="menu__item" id="exit"> <a href="{{route('logout')}}">Выйти из аккаунта </a></li>
                     </ul>
                 </div>
                 <div class="home__blocks">
