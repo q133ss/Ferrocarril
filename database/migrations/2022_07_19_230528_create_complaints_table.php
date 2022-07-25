@@ -18,8 +18,9 @@ return new class extends Migration
             $table->string('name');
             $table->string('company');
             $table->string('phone');
-            $table->string('message1');
-            $table->text('message2');
+            $table->string('message1')->nullable();
+            $table->text('message2')->nullable();
+            $table->foreignId('user_id')->constrained();
             $table->timestamps();
         });
     }

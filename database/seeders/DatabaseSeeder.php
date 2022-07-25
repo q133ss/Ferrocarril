@@ -35,5 +35,38 @@ class DatabaseSeeder extends Seeder
              'remember_token' => Str::random(10),
              'role_id' => 1
          ]);
+
+        \App\Models\Application::create([
+            'type' => '1',
+            'currency' => 'USD',
+            'genus' => 'Род', //род
+            'comp' => 'Состав 1', //состав
+            'date' => '22.07.2022',
+            'country_sender' => 'Germany', //отправитель
+            'station_sender' => 'Station1', //отправитель
+            'country_receiver' => 'Poland', //получатель
+            'station_receiver' => 'station2', //получатель
+            'sender' => 'Ivan Ivanov', //грузоотправитель
+            'receiver' => 'Sergei', //грузополучатель
+            'code_cargo' => '302', //код груза
+            'weight' => '500kg',
+            'terms' => '-', //условия
+            'qty' => '3',
+            'payer' => 'Ivan Ivanov', //плательщики
+            'notes' => '-', //примечания
+            'loading' => '22.07.22', //погрузка/выгрука
+            'cost_in_kzt' => '500', //стоимость в KZT
+            'period' => '2 hour', //период подачи
+            'user_id' => 1
+        ]);
+
+        \App\Models\Complaint::create([
+            'name' => 'Ivan',
+            'company' => 'ООО Ромашка',
+            'phone' => '89005002019',
+            'message1' => 'message1',
+            'message2' => 'message2',
+            'user_id' => 1
+        ]);
     }
 }

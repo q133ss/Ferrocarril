@@ -12,4 +12,8 @@ class ApplicationController extends Controller
     public function store(StoreRequest $request){
         return Application::create($request->validated());
     }
+
+    public function get(){
+        return Auth()->user()->applications;
+    }
 }

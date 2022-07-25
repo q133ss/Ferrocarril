@@ -28,6 +28,11 @@ class Application extends Model
         'notes',
         'loading',
         'cost_in_kzt',
-        'period'
+        'period',
+        'user_id'
     ];
+
+    public function user(){
+        $this->hasOne(User::class , 'id', 'user_id');
+    }
 }

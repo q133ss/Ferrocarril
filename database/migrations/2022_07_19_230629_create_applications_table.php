@@ -35,6 +35,8 @@ return new class extends Migration
             $table->string('loading'); //погрузка/выгрука
             $table->string('cost_in_kzt'); //стоимость в KZT
             $table->string('period'); //период подачи
+            $table->foreignId('user_id')->constrained();
+            $table->boolean('is_new')->default(1);
             $table->timestamps();
         });
     }

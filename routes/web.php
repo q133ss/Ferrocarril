@@ -22,6 +22,13 @@ Route::middleware('auth')->group(function(){
     Route::get('/account', function (){
         return view('account');
     })->name('account');
+
+    Route::get('/applications', [App\Http\Controllers\ApplicationController::class , 'index'])->name('applications.index');
+    Route::get('/application/{id}', [App\Http\Controllers\ApplicationController::class , 'detail'])->name('applications.detail');
+    Route::post('/hide-app/{id}', [App\Http\Controllers\ApplicationController::class , 'hide'])->name('applications.hide');
+    Route::get('/applications/history', [App\Http\Controllers\ApplicationController::class , 'history'])->name('applications.history');
+
+    Route::get('/complaints', [App\Http\Controllers\ComplaintsController::class , 'index'])->name('complaints.index');
 });
 
 Auth::routes();
