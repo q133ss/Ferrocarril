@@ -2,6 +2,9 @@
 @section('title')
 @if(Route::currentRouteName() == 'applications.index')Заявки@elseИстория@endif
 @endsection
+@section('meta')
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+@endsection
 @section('content')
     <div class="home__appliList">
         <div class="home__appliList-tabs">
@@ -20,7 +23,7 @@
         <div class="home__appliList-line"></div>
         <div class="home__appliList-search">
             <label class="home__appliList-label" for="appliSearch"><img class="home__appliList-decor" src="/assets/svg/search.svg" alt="icon">
-                <input class="home__appliList-input" type="text" placeholder="Поиск"><img class="home__appliList-decor" src="/assets/svg/close.svg" alt="icon">
+                <input class="home__appliList-input" oninput="search(this.value)" type="text" placeholder="Поиск"><img class="home__appliList-decor" src="/assets/svg/close.svg" alt="icon">
             </label>
         </div>
         <div class="home__appliList-lines"></div>
@@ -41,4 +44,20 @@
             @endforeach
         </div>
     </div>
+
+    <script>
+        function search(search){
+            $.ajax({
+                url: '{{route('applications.index.search')}}',
+                method: 'post',
+                data: {search: search},
+                headers: {
+                    'X-CSRF-Token': $('meta[name="csrf-token"]').attr('content')
+                },
+                success: function(data){
+                    $('.home__appliList-list').html(data)
+                }
+            });
+        }
+    </script>
 @endsection

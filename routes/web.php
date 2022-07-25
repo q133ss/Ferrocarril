@@ -26,6 +26,7 @@ Route::middleware('auth')->group(function(){
     Route::get('/applications', [App\Http\Controllers\ApplicationController::class , 'index'])->name('applications.index');
     Route::get('/application/{id}', [App\Http\Controllers\ApplicationController::class , 'detail'])->name('applications.detail');
     Route::post('/hide-app/{id}', [App\Http\Controllers\ApplicationController::class , 'hide'])->name('applications.hide');
+    Route::post('/application/index/search', [App\Http\Controllers\ApplicationController::class , 'indexSearch'])->name('applications.index.search');
     Route::get('/applications/history', [App\Http\Controllers\ApplicationController::class , 'history'])->name('applications.history');
 
     Route::get('/complaints', [App\Http\Controllers\ComplaintsController::class , 'index'])->name('complaints.index');
